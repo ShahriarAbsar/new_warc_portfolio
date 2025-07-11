@@ -1,0 +1,590 @@
+<app-header></app-header>
+
+<section class="main">
+  <section class="hero">
+    <div class="topPart">
+      <div class="title">
+        <h1>Behind the Pixels</h1>
+        <h2>-Meet the Creator</h2>
+      </div>
+      <div class="paragraph">
+        <p>
+          Yes, we're young. Yes, we live at the cutting edge and speak the
+          language of the present day fluently in and around the digital world.
+          Yes, we mix our visionary mindset with timeless quality. Yes, we are
+          snappy, provocative and competitive.But no, we haven't finished
+          learning yet and we're still a long way off.
+        </p>
+      </div>
+    </div>
+
+    <div class="bottomPart">
+      <div class="bottomImage">
+        <img
+          src="../../../assets/images/TeamsPage/bottomBackground.png"
+          alt=""
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="body">
+    <div class="bodytitle">
+      <h1>Design with Precision</h1>
+      <h2>Our Process Explained</h2>
+    </div>
+
+    <div class="workProcess" style="z-index: 1101; margin-top: 20px">
+      <swiper-container
+        class="mySwiper"
+        init="false"
+        #workSwiper
+        slides-per-view="3"
+        [simulateTouch]="true"
+        effect="Freemode"
+        [autoplay]="{
+        enabled:true,
+            delay:2000,
+            pauseOnMouseEnter:true,
+            reverseDirection:false,
+            }"
+
+            
+        loop="true"
+        [free-mode]="{
+          enabled: true,
+          momentum: false
+        }"
+        speed="4000"
+        space-between="0"
+        [breakpoints]="{
+          '300': { slidesPerView: 1 },
+          '900': { slidesPerView: 3 }
+        }"
+      >
+        <swiper-slide>
+          <div class="card">
+            <div class="title">
+              <h2>Conceptual Design/ Wireframing</h2>
+            </div>
+            <div class="paragraph">
+              <p>
+                Conceptual Design/Wireframing involves defining the layout by
+                arranging elements on each page to optimize user flow and
+                hierarchy, mapping key features to ensure a seamless user
+                experience, and creating visual guides through simple sketches
+                or wireframes to outline content placement .
+              </p>
+            </div>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide>
+          <div class="card">
+            <div class="title">
+              <h2>Web Design</h2>
+            </div>
+            <div class="paragraph">
+              <p>
+                Web Design is the process of creating visually appealing and
+                user-friendly websites by combining layout, colors, graphics,
+                and interactive elements. It balances aesthetics with
+                functionality to deliver an engaging user experience, ensuring
+                responsiveness, accessibility, and alignment with the brand's
+                goals.
+              </p>
+            </div>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide>
+          <div class="card" style="border: none; box-shadow: none">
+            <div class="title">
+              <h2>Web Development</h2>
+            </div>
+            <div class="paragraph">
+              <p>
+                Web Development involves creating and maintaining websites by
+                coding and programming the front-end (user interface) and
+                back-end (server-side). It ensures the site is functional,
+                secure, and responsive, allowing smooth interaction with its
+                features. The process uses various technologies to bring the
+                design to life.
+              </p>
+            </div>
+          </div>
+        </swiper-slide>
+        <!-- <swiper-slide >Appdev</swiper-slide>
+            <swiper-slide >Ajaira</swiper-slide>
+            <swiper-slide >HobeKichu</swiper-slide>
+            <swiper-slide >Upcoming</swiper-slide>
+            <swiper-slide >Choltese</swiper-slide>
+            <swiper-slide >Hobe</swiper-slide> -->
+      </swiper-container>
+    </div>
+  </section>
+
+  <section class="teamMembers">
+    <div class="titleTexts">
+      <div class="title">
+        <h1>Connect with our team</h1>
+      </div>
+      <div class="paragraph">
+        <p>
+          Yes, we're young. Yes, we live at the cutting edge and speak the language of the present day fluently in and around the digital world. Yes, we mix our visionary mindset with timeless quality.Yes, we aresnappy,provocative and competitive. But no, we haven't finishedlearning yet
+          and we're still a long way off.
+        </p>
+      </div>
+    </div>
+
+    <div class="caurosel">
+      <swiper-container
+      
+      class="mySwiperTeam"
+      init="false"
+      #TeamSwiper
+      slides-per-view="4"
+      [simulateTouch]="true"
+      effect="Freemode"
+      [autoplay]="{
+      enabled:true,
+          delay:1000,
+          pauseOnMouseEnter:true,
+          reverseDirection:false,
+          }"
+      loop="true"
+      [free-mode]="{
+        enabled: true,
+        momentum: false
+      }"
+      speed="3000"
+      space-between="5"
+      [navigation]="{
+        nextEl: '.custom-swiper-button-next',
+        prevEl: '.custom-swiper-button-prev'
+      }"
+
+      [scrollbar]="{enabled:true, el:'.swiper-scrollbar', clickable:true,}"
+      
+      [slidesPerGroup]="1"
+      [breakpoints]="{
+        '300': { slidesPerView: 1 },
+        '768': { slidesPerView: 4 }
+      }"
+    >
+    <!-- Fayek Al Rafi -->
+      <swiper-slide>
+        <div class="card">
+          <div class="image">
+            <img src="../../../assets/images/TeamsPage/teamMembers/fayek2.png" alt="">
+            <!-- <h2>Conceptual Design/ Wireframing</h2> -->
+          </div>
+          <div class="spans">
+            <span>
+              Fayek Al Rafi
+            </span>
+            <br>
+            <span>
+              Founder & CEO
+            </span>
+          </div>
+        </div>
+      </swiper-slide>
+      <!-- Abrar Ehsan Nihal -->
+      <swiper-slide>
+        <div class="card">
+          <div class="image">
+            <img src="../../../assets/images/TeamsPage/teamMembers/nihal2.png" alt="">
+            <!-- <h2>Conceptual Design/ Wireframing</h2> -->
+          </div>
+          <div class="spans">
+            <span>
+              Abrar Ehsan Nihal
+            </span>
+            <br>
+            <span>
+              Founder & CEO
+            </span>
+          </div>
+        </div>
+      </swiper-slide>
+      <!-- Akramul Islam -->
+      <swiper-slide>
+        <div class="card">
+          <div class="image">
+            <img src="../../../assets/images/TeamsPage/teamMembers/Akramul2.png" alt="">
+            <!-- <h2>Conceptual Design/ Wireframing</h2> -->
+          </div>
+          <div class="spans">
+            <span>
+              Akramul Islam
+            </span>
+            <br>
+            <span>
+              Founder & CEO
+            </span>
+          </div>
+        </div>
+      </swiper-slide>
+
+      <!-- Shahriar Absar -->
+      <swiper-slide>
+        <div class="card">
+          <div class="image">
+            <img src="../../../assets/images/TeamsPage/teamMembers/Absar2.png" alt="">
+            <!-- <h2>Conceptual Design/ Wireframing</h2> -->
+          </div>
+          <div class="spans">
+            <span>
+              Shahriar Absar
+            </span>
+            <br>
+            <span>
+              Founder & CEO
+            </span>
+          </div>
+        </div>
+      </swiper-slide>
+      <!-- Abid Mahmud Akash -->
+      <swiper-slide>
+        <div class="card">
+          <div class="image">
+            <img src="../../../assets/images/TeamsPage/teamMembers/akash4.2.png" alt="">
+            <!-- <h2>Conceptual Design/ Wireframing</h2> -->
+          </div>
+          <div class="spans">
+            <span>
+              Abid Mahmud Akash
+            </span>
+            <br>
+            <span>
+              Founder & CEO
+            </span>
+          </div>
+        </div>
+      </swiper-slide>
+      <!-- Rubabatul Urba -->
+      <swiper-slide>
+        <div class="card">
+          <div class="image">
+            <img src="../../../assets/images/TeamsPage/teamMembers/Urba2.png" alt="">
+            <!-- <h2>Conceptual Design/ Wireframing</h2> -->
+          </div>
+          <div class="spans">
+            <span>
+              Rubabatul Urba
+            </span>
+            <br>
+            <span>
+              Founder & CEO
+            </span>
+          </div>
+        </div>
+      </swiper-slide>
+      <!-- Tasnim Ibn Jakir -->
+      <swiper-slide>
+        <div class="card">
+          <div class="image">
+            <img src="../../../assets/images/TeamsPage/teamMembers/Tasnim2.png" alt="">
+            <!-- <h2>Conceptual Design/ Wireframing</h2> -->
+          </div>
+          <div class="spans">
+            <span>
+              Tasnim Ibn Jakir
+            </span>
+            <br>
+            <span>
+              Founder & CEO
+            </span>
+          </div>
+        </div>
+      </swiper-slide>
+      <!-- Sabbir Ahmed -->
+      <swiper-slide>
+        <div class="card">
+          <div class="image">
+            <img src="../../../assets/images/TeamsPage/teamMembers/Sabbir2.png" alt="">
+            <!-- <h2>Conceptual Design/ Wireframing</h2> -->
+          </div>
+          <div class="spans">
+            <span>
+              Sabbir Ahmed
+            </span>
+            <br>
+            <span>
+              Founder & CEO
+            </span>
+          </div>
+        </div>
+      </swiper-slide>
+
+      <!-- Muhaimin Islam  -->
+      <swiper-slide>
+        <div class="card">
+          <div class="image">
+            <img src="../../../assets/images/TeamsPage/teamMembers/Muhaimin2.png" alt="">
+            <!-- <h2>Conceptual Design/ Wireframing</h2> -->
+          </div>
+          <div class="spans">
+            <span>
+              Muhaimin Islam 
+            </span>
+            <br>
+            <span>
+              Founder & CEO
+            </span>
+          </div>
+        </div>
+      </swiper-slide>
+      <!-- Kazi -->
+
+      <swiper-slide>
+        <div class="card">
+          <div class="image">
+            <img src="../../../assets/images/TeamsPage/teamMembers/kazi.png" alt="">
+            <!-- <h2>Conceptual Design/ Wireframing</h2> -->
+          </div>
+          <div class="spans">
+            <span>
+              Kazi Junaed
+            </span>
+            <br>
+            <span>
+              Founder & CEO
+            </span>
+          </div>
+        </div>
+      </swiper-slide>
+      <!-- Rashed Vai -->
+
+      <swiper-slide>
+        <div class="card">
+          <div class="image">
+            <img src="../../../assets/images/TeamsPage/teamMembers/RashedVai2.png" alt="">
+            <!-- <h2>Conceptual Design/ Wireframing</h2> -->
+          </div>
+          <div class="spans">
+            <span>
+              Rashed Vai
+            </span>
+            <br>
+            <span>
+              Founder & CEO
+            </span>
+          </div>
+        </div>
+      </swiper-slide>
+      <!-- Suhash Vai -->
+
+      <swiper-slide>
+        <div class="card">
+          <div class="image">
+            <img src="../../../assets/images/TeamsPage/teamMembers/ShuhashVai2.png" alt="">
+            <!-- <h2>Conceptual Design/ Wireframing</h2> -->
+          </div>
+          <div class="spans">
+            <span>
+              Suhash Vai
+            </span>
+            <br>
+            <span>
+              Founder & CEO
+            </span>
+          </div>
+        </div>
+      </swiper-slide>
+
+      <!-- Navid Vai -->
+
+      <swiper-slide>
+        <div class="card">
+          <div class="image">
+            <img src="../../../assets/images/TeamsPage/teamMembers/NavidVai2.png" alt="">
+          </div>
+          <div class="spans">
+            <span>
+             Navid Vai
+            </span>
+            <br>
+            <span>
+              Founder & CEO
+            </span>
+          </div>
+        </div>
+      </swiper-slide>
+              <!--  Nawshad Kabir Ananda -->
+
+      <swiper-slide>
+        <div class="card">
+          <div class="image">
+            <img src="../../../assets/images/TeamsPage/teamMembers/NawshadVai (2).png" alt="">
+            <!-- <h2>Conceptual Design/ Wireframing</h2> -->
+          </div>
+          <div class="spans">
+            <span>
+              Nawshad Kabir Ananda
+            </span>
+            <br>
+            <span>
+              Founder & CEO
+            </span>
+          </div>
+        </div>
+      </swiper-slide>
+      <!-- Fayek -->
+
+      <swiper-slide>
+        <div class="card">
+          <div class="image">
+            <img src="../../../assets/images/TeamsPage/teamMembers/xenon3.png" alt="">
+            <!-- <h2>Conceptual Design/ Wireframing</h2> -->
+          </div>
+          <div class="spans">
+            <span>
+              Xenon
+            </span>
+            <br>
+            <span>
+              Founder & CEO
+            </span>
+          </div>
+        </div>
+      </swiper-slide>
+      <!-- <swiper-slide>
+        <div class="card">
+          <div class="title">
+            <h2>Web Design</h2>
+          </div>
+          <div class="paragraph">
+            <p>
+              Web Design is the process of creating visually appealing and
+              user-friendly websites by combining layout, colors, graphics,
+              and interactive elements. It balances aesthetics with
+              functionality to deliver an engaging user experience, ensuring
+              responsiveness, accessibility, and alignment with the brand's
+              goals.
+            </p>
+          </div>
+        </div>
+      </swiper-slide> -->
+
+      <!-- <swiper-slide>
+        <div class="card" style="border: none; box-shadow: none">
+          <div class="title">
+            <h2>Web Development</h2>
+          </div>
+          <div class="paragraph">
+            <p>
+              Web Development involves creating and maintaining websites by
+              coding and programming the front-end (user interface) and
+              back-end (server-side). It ensures the site is functional,
+              secure, and responsive, allowing smooth interaction with its
+              features. The process uses various technologies to bring the
+              design to life.
+            </p>
+          </div>
+        </div>
+      </swiper-slide> -->
+      <!-- <swiper-slide >Appdev</swiper-slide>
+          <swiper-slide >Ajaira</swiper-slide>
+          <swiper-slide >HobeKichu</swiper-slide>
+          <swiper-slide >Upcoming</swiper-slide>
+          <swiper-slide >Choltese</swiper-slide>
+          <swiper-slide >Hobe</swiper-slide> -->
+
+
+          
+    </swiper-container>
+    
+    <div class="swiper-scrollbar"></div>
+    <div class="navButtons">
+      <div class="custom-swiper-button-next"></div>
+    <div class="custom-swiper-button-prev"></div>
+    </div>
+    
+
+    <!-- Custom Pagination -->
+    <!-- <div class="custom-scrollbar-pagination"></div> -->
+
+    <!-- <div id="hero-pagination"></div> -->
+    </div>
+
+    
+   
+  </section>
+  <section class="videoSection">
+    <div class="video">
+      <video
+        muted
+        autoplay
+        loop
+        src="../../../assets/images/TeamsPage/demo3.mp4"
+      ></video>
+    </div>
+    <div class="textOverlay">
+      <div class="videoText">
+        <h1>Discover our WORK history</h1>
+      </div>
+      <div class="button">
+        <button class="btn">
+          Discover Now
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 14 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.05146 13.4628C0.920263 13.4628 0.789063 13.4132 0.689063 13.3132C0.489062 13.1132 0.489062 12.7892 0.689063 12.5892L12.5931 0.685156C12.7931 0.485156 13.1171 0.485156 13.3171 0.685156C13.5171 0.885156 13.5171 1.20916 13.3171 1.40916L1.41386 13.3132C1.31386 13.4132 1.18266 13.4628 1.05146 13.4628Z"
+              fill="white"
+            />
+            <path
+              d="M12.9537 12.3056C12.6713 12.3056 12.4417 12.076 12.4417 11.7936V1.55916H2.20731C1.92491 1.55916 1.69531 1.32956 1.69531 1.04716C1.69531 0.764756 1.92491 0.535156 2.20731 0.535156H12.9537C13.2361 0.535156 13.4657 0.764756 13.4657 1.04716V11.7936C13.4657 12.076 13.2361 12.3056 12.9537 12.3056Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="counterContainer">
+      <div class="counter">
+        <div class="projects">
+          <h1>70</h1>
+          <span>Projects</span>
+        </div>
+        <div class="Clients">
+          <h1>20</h1>
+          <span>Clients</span>
+        </div>
+        <div class="experience">
+          <h1>03</h1>
+          <span>Experience</span>
+        </div>
+      </div>
+
+      <hr />
+    </div>
+
+    <div class="brand" id="footer" #footer>
+      <div class="svg">
+        <!-- <svg width="1920" height="521" viewBox="0 0 1920 521" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_414_2301)">
+          <path d="M1194.38 202.737C1169.34 86.6446 1069.73 0 950.517 0C812.253 0 700.117 116.659 700.117 260.5C700.117 404.341 812.253 521 950.517 521C1069.73 521 1169.34 434.355 1194.93 318.263V521H1282.02V0H1194.93V202.737H1194.38ZM950.517 430.391C860.7 430.391 787.213 354.507 787.213 260.5C787.213 167.06 860.155 90.6087 950.517 90.6087C1040.88 90.6087 1113.82 166.493 1113.82 260.5C1113.28 353.94 1040.33 430.391 950.517 430.391Z" fill="#B9B9B9" fill-opacity="0.2"/>
+          <path d="M1757.28 260.5C1757.28 167.06 1830.22 90.6087 1920.58 90.6087V0C1782.32 0 1670.18 116.659 1670.18 260.5C1670.18 404.341 1782.32 521 1920.58 521V430.391C1830.22 430.391 1757.28 353.94 1757.28 260.5Z" fill="#B9B9B9" fill-opacity="0.2"/>
+          <path d="M1411.03 202.737V0H1323.94V521H1411.03V259.934H1492.14C1492.68 166.493 1565.63 91.175 1655.44 91.175V0C1536.23 0 1436.62 86.6446 1411.03 202.737Z" fill="#B9B9B9" fill-opacity="0.2"/>
+          <path d="M670.724 0L426.857 436.054V0H339.217H329.963L86.0955 436.054V0H-1V521H38.7373H86.0955H135.087L339.217 156.3V521H378.954H426.857H475.303L767.073 0H670.724Z" fill="#B9B9B9" fill-opacity="0.2"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_414_2301">
+          <rect width="1921" height="521" fill="white" transform="translate(-1)"/>
+          </clipPath>
+          </defs>
+          </svg> -->
+
+        <img src="../../../assets/images/TeamsPage/brand.svg" alt="" />
+      </div>
+    </div>
+  </section>
+</section>

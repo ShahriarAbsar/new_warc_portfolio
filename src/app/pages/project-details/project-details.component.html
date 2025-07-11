@@ -1,0 +1,159 @@
+<app-header></app-header>
+
+<section class="main">
+      <div class="mainContainer">
+            <div class="fullContainer">
+
+                  <ng-container >
+
+                        
+                  
+                  <div class="heroImage">
+                        <!-- <img [src]="project.body.heroImg" alt=""> -->
+                        <video [src]="project.body.heroVideo"muted autoplay loop playsinline></video>
+                  </div>
+                  </ng-container>   
+
+
+
+              <div class="projectInformation">
+                 <div class="projectBody">
+                  <div class="bodyLeft">
+
+                        <ng-container  >
+
+
+                              <div class="client">
+                                    <h3>Client</h3>
+                                    <span>{{project.body.client}}</span>
+                              </div>
+                        </ng-container>
+
+                        <ng-container>
+
+                              <div class="involvement" >
+                                    <h3>Involvement</h3>
+                                    <span>{{project.body.Involvement[0]}}</span>
+                                    <span>{{project.body.Involvement[1]}}</span>
+                                    <span>{{project.body.Involvement[2]}}</span>
+                              </div>
+                        </ng-container>
+                  </div>
+                  <hr>
+                  <div class="bodyRight">
+                        <div class="rightTop">
+
+                          <div class="title">
+                              <h1>{{project.body.mainTitle}}</h1>
+                        </div>
+                        <div class="subtitle">
+                              <h2>{{project.body.mainTitle}}</h2>
+                        </div>    
+                        </div>
+                        <div class="rightBottom">
+                              <h3>Results</h3>
+                              <p>
+                                    {{project.body.result}}
+                              </p>
+                        </div>
+                        
+                  </div>
+                  
+                 </div> 
+            </div> 
+
+
+            <ng-container *ngFor="let content of project.body.contents">
+                  <div class="singleImage"  *ngIf="content.type=='singleImage'">
+                        <img src="{{content.urls[0]}}" alt="">
+                  </div>
+
+                  <div class="doubleImage" *ngIf="content.type=='doubleImage'">
+                        <img src="{{content.urls[0]}}" alt="">
+                        <img src="{{content.urls[1]}}" alt="">
+                         
+                  </div>
+
+                  <div class="doubleVideo" *ngIf="content.type=='doubleVideo'">
+
+                       <div class="videoChild">
+                        <video src="{{content.urls[0]}}" autoplay muted loop playsinline></video>
+                       </div>
+                       <div class="videoChild">
+                        <video src="{{content.urls[1]}}" autoplay muted loop playsinline></video>
+                       </div>
+                  </div>
+
+                  <div class="bigVideo" *ngIf="content.type=='video'">
+                       <video src="{{content.urls[0]}}" autoplay muted loop playsinline></video>
+                  </div>
+                                    
+            </ng-container>
+            
+
+            
+            <!-- <div class="singleImage">
+                  <img src="https://ik.imagekit.io/uhvinpqxo/New%20Warc%20Website/assets/images/projectImages/bigImage2.png?updatedAt=1725362660118" alt="">
+            </div>
+            <div class="singleImage">
+                  <img src="https://ik.imagekit.io/uhvinpqxo/New%20Warc%20Website/assets/images/projectImages/bigimage3.png?updatedAt=1725362660171" alt="">
+            </div>
+
+            <div class="doubleImage">
+                  <img src="https://ik.imagekit.io/uhvinpqxo/New%20Warc%20Website/assets/images/projectImages/smallImage1.png?updatedAt=1725362658846" alt="">
+                  <img src="https://ik.imagekit.io/uhvinpqxo/New%20Warc%20Website/assets/images/projectImages/smallImage2.png?updatedAt=1725362660238" alt="">
+            </div>
+            <div class="singleImage">
+                  <img src="https://ik.imagekit.io/uhvinpqxo/New%20Warc%20Website/assets/images/projectImages/bigimage4.png?updatedAt=1725362657417" alt="">
+            </div>
+            <div class="singleImage">
+                  <img src="https://ik.imagekit.io/uhvinpqxo/New%20Warc%20Website/assets/images/projectImages/bigimage5.png?updatedAt=1725362659951" alt="">
+            </div>
+            <div class="doubleImage">
+                  <img src="https://ik.imagekit.io/uhvinpqxo/New%20Warc%20Website/assets/images/projectImages/smallimage3.png?updatedAt=1725362657012" alt="">
+                  <img src="https://ik.imagekit.io/uhvinpqxo/New%20Warc%20Website/assets/images/projectImages/smallimage4.png?updatedAt=1725362661088" alt="">
+            </div>
+            <div class="singleImage">
+                  <img src="https://ik.imagekit.io/uhvinpqxo/New%20Warc%20Website/assets/images/projectImages/bigimage6.png?updatedAt=1725362660087" alt="">
+            </div>
+            <div class="singleImage">
+                  <img src="https://ik.imagekit.io/uhvinpqxo/New%20Warc%20Website/assets/images/projectImages/bigimage7.png?updatedAt=1725362658025" alt="">
+            </div> -->
+
+            <div class="contact">
+                  <div class="contactBody">
+                        <div class="heading">
+                              <h1>
+                                    Make Contact, Make Impact.
+                              </h1>
+
+                        </div>
+                        <div class="subtitle">
+                              <h3>
+                                    WITH US IT HAPPENS.
+                              </h3>
+                              <h3>
+                                    WE WOULD LOVE TO HEAR FROM YOU.
+                              </h3>
+                        </div>
+                        <div class="button">
+                              <button class="btn">Start a project with us</button>
+                        </div>
+                  </div>
+            </div>
+            
+
+            <div class="nextProjectPreview">
+                  <div class="projectPreview">
+                        <img src="{{nextProject.body.heroImg}}" alt="">
+                  </div>
+
+                  <div class="buttons">
+                        <a [routerLink]="['/','works',prevIdx]"><button class="btn">Previous</button></a>
+                        <hr>
+                        <a [routerLink]="['/','works',nextIdx]"><button class="btn2">Next</button></a>
+                  </div>
+            </div>
+            </div>
+      </div>
+</section>

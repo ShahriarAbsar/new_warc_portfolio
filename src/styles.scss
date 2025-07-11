@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@import'./theme/base';
+@import'./theme/fonts';
+@import'./theme/variables';
+
+*{
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+      font-family: NeueItalic;
+      src: url("./assets/Fonts/NeueMontreal/NeueMontreal-Italic.otf");
+    }
+
+    @font-face {
+      font-family: NeueReg;
+      src: url("./assets/Fonts/NeueMontreal/NeueMontreal-Regular.otf");
+    }
+
+    @font-face {
+      font-family: NeueMed;
+      src: url('./assets/Fonts/NeueMontreal/NeueMontreal-Medium.otf');
+    }
+
+    
